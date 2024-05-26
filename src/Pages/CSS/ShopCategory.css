@@ -1,20 +1,28 @@
+.shopcategory{
+}
 .shop-category-banner{
     display: block;
-    margin: 30px auto;
-    width: 82%;
+    margin: 10px auto;
+    width: 95%;
 }
 
 .shopcategory-indexSort{
     display: flex;
-    margin: 0px 70px;
+    margin: 0px 10px;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
+}
+
+.shopcategory-indexSort p{
+font-size: 12px;
 }
 
 .shopcategory-sort{
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 40px;
     border: 1px solid #888;
+    font-size: 12px;
 }
 
 .shop-category-banner p span{
@@ -22,22 +30,100 @@
 }
 
 .shopcategory-product{
-    margin: 20px 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    place-items: center;
 }
 
 .shopcategory-loadmore{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px auto;
-    width: 183px;
-    height: 59px;
+    margin: 50px auto;
+    width: 150px;
+    height: 40px;
     border-radius: 75px;
     background: #ededed;
     color: #787878;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
 }
+
+
+/* media queries */
+/* xs */
+@media(min-width: 475px){
+    .container{
+        max-width: 475px;
+    }    
+    
+  }
+  /* sm */
+  @media(min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+    .shopcategory-product{
+        margin: 20px 40px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+   
+  }
+  /* md */
+  @media(min-width: 768px){
+    .container{
+        max-width: 768px;
+    }   
+
+    .shopcategory-indexSort{
+        display: flex;
+        margin: 20px;
+    }
+
+    .shopcategory-indexSort p{
+        font-size: 16px;
+    }
+    
+    .shopcategory-sort{
+font-size: 16px;
+    }
+    .shopcategory-product{
+        margin: 20px 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .shopcategory-loadmore{
+        font-size: large;
+        margin: 40px auto;
+        width: 183px;
+        height: 59px;
+    }
+    
+      
+  }
+  /* lg  */
+  @media(min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }    
+
+    
+  
+  }
+  /* xlg */
+  @media(min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }       
+  
+  }
+  /* 2xlg */
+  @media(min-width: 2560px){
+    .container{
+        max-width: 2560px;
+    } 
+   
+  }
