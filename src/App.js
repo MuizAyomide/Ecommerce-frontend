@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import Shop from './Pages/Shop'
 import ShopCategory from './Pages/ShopCategory'
 import Product from './Pages/Product'
@@ -10,17 +10,24 @@ import Footer from './Components/Footer/Footer';
 import men_banner from './Components/Assets/banner_mens.png'
 import women_banner from './Components/Assets/banner_women.png'
 import kids_banner from './Components/Assets/banner_kids.png'
-
+import { useState } from 'react';
 
 
 
 
 function App() {
+  const [menu,setMenu] = useState('')
   return (
     <div>
 
       <BrowserRouter>
      <Navbar/>
+     <ul className='small-screen'>
+            <li onClick={()=> setMenu('shop')}><Link to='/' style={{textDecoration: 'none', color: 'black'}}>Shop </Link> {menu ==='shop'}</li>
+            <li onClick={()=> setMenu('mens')}><Link to='/mens' style={{textDecoration: 'none', color: 'black'}}>  Men</Link>{menu ==='mens'}</li>
+            <li onClick={()=> setMenu('womens')}><Link to='/womens' style={{textDecoration: 'none', color: 'black'}}>   Women</Link>{menu ==='womens'}</li>
+            <li onClick={()=> setMenu('kids')}> <Link to='/kids' style={{textDecoration: 'none', color: 'black'}}>Kids </Link>{menu ==='kids'}</li>
+        </ul>
       <Routes>
         <Route path='/' element={<Shop/>}/>
         <Route path='/mens' element={<ShopCategory banner={men_banner}  category='men'  />}/>
