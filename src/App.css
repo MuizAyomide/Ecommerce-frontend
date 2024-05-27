@@ -57,9 +57,7 @@
   .container{
       max-width: 1024px;
   }    
-  .navbar{
-      gap: 70px;
-  }  
+
 }
 /* xlg */
 @media(min-width: 1280px){
