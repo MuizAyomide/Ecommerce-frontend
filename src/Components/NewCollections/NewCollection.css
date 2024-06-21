@@ -43,6 +43,7 @@
 @media(min-width: 640px){
     .container{
         max-width: 640px;
+        
     }
     .collections{
         grid-template-columns: 1fr 1fr;
