@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className='navbar container'>
         <div className='nav-logo'>
-            <img src={logo} alt="" />
+        <Link to='/' style={{textDecoration: 'none'}}> <img src={logo} alt="" /> </Link>
             <p>SHOPIFY</p>
         </div>
         <ul className='nav-menu'>
