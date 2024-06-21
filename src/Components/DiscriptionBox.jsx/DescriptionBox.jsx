@@ -10,7 +10,8 @@ const DescriptionBox = () => {
       </div>
       <div className="descriptionbox-description">
         <p>An e-commerce website is an online platform that facilitate buying and selling
-          of products or services over the internet serves as a virtual marketplace where businesses and
+          of products or services over the internet serves as a virtual marketplace where busin
+          esses and
           individuals showcase thier products, interact with customers, and conduct
           transactions without the need for a physical presence. E-commerce erwebsites have gained immense 
           popularity due to thier convenience accessibility, and the global reach they offer.
