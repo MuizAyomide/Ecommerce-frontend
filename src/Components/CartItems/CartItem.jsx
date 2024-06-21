@@ -7,11 +7,13 @@ import Cart from "../../Pages/Cart";
 const CartItem = () => {
   const { getTotalCartAmount, all_product, cartItem, removeFromCart } = useContext(ShopContext);
 
+
   return (
     <div className="cartItems">
       <div className="cartItems-format-main">
         <p>Products</p>
         <p>Title</p>
+        
         <p>Price</p>
         <p>Quantity</p>
         <p>Total</p>
